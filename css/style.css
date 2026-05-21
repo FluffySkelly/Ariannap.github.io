@@ -1,0 +1,319 @@
+/*Name: Arianna Payne
+Course: INFT1206 - Web Development
+File style.css
+Description: This is the homepage for my website.
+*/
+
+/*
+  ========================================
+  Project Resources & Credits
+  ========================================
+  1. MDN Web Docs - HTML Elements: 
+     https://developer.mozilla.org/en-US/docs/Web/HTML
+     
+  2. CSS-Tricks - Flexbox Guide: 
+     https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+     
+  3. Google Fonts - Share Tech Mono: 
+     https://fonts.google.com/specimen/Share+Tech+Mono
+     
+  4. AI Gemini: 
+     For explanations and suggestions.
+  ========================================
+*/
+
+/* Color Variables */
+/* || System Variables */
+:root {
+  --sys-bg: #030303;
+  --sys-surface: #0a0f0f;
+  --sys-glow: #00ffcc;
+  --sys-alert: #ff4500;
+  --sys-text: #e0f8f8;
+  --sys-dim: #4d6666;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  background-color: var(--sys-bg);
+}
+
+body {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  font-family: 'Share Tech Mono', monospace;
+  color: var(--sys-text);
+}
+
+#intrusion-alert {
+  background-color: #1a0800;
+  border: 1px solid var(--sys-alert);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(255, 69, 0, 0.4);
+}
+
+#intrusion-alert p {
+  color: var(--sys-alert);
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 2px;
+  text-shadow: 0 0 5px var(--sys-alert);
+  animation: flicker 2s infinite;
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+  55% { opacity: 0.4; }
+  60% { opacity: 0.9; }
+}
+
+h1, h2, h3, a {
+  font-family: 'Share Tech Mono', monospace;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+p, li {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+#sys-header {
+  border-bottom: 2px solid var(--sys-glow);
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+#header-top {
+  display: flex;
+  justify-content: space-between;
+  color: var(--sys-dim);
+  font-size: 1.4rem;
+  border-bottom: 1px dashed var(--sys-dim);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#main-title {
+  font-size: 4rem;
+  color: var(--sys-glow);
+  margin: 0;
+  text-shadow: 0 0 10px var(--sys-glow);
+}
+
+#sub-title {
+  font-size: 1.8rem;
+  color: var(--sys-text);
+  margin-top: 0.5rem;
+}
+
+#sys-nav {
+  background-color: var(--sys-surface);
+  border: 1px solid var(--sys-dim);
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#nav-links {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+
+#nav-links li {
+  flex: 1;
+}
+
+#nav-links a {
+  display: block;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 1.6rem;
+  color: var(--sys-glow);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+#nav-links a:hover {
+  background-color: var(--sys-glow);
+  color: var(--sys-bg);
+  box-shadow: 0 0 10px var(--sys-glow);
+}
+
+#home-button a {
+  padding: 0.5rem;
+}
+
+#gem-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 4px;
+  border: 1px solid var(--sys-glow);
+  display: block;
+  margin: 0 auto;
+  filter: grayscale(100%) contrast(120%) sepia(110%) hue-rotate(130deg);
+}
+
+#search-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  gap: 1rem;
+}
+
+#prompt-arrow {
+  color: var(--sys-glow);
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+#search-input {
+  flex: 3;
+  background-color: transparent;
+  color: var(--sys-text);
+  border: none;
+  border-bottom: 1px solid var(--sys-glow);
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  outline: none;
+}
+
+#search-submit {
+  flex: 1;
+  background: transparent;
+  color: var(--sys-glow);
+  border: 1px solid var(--sys-glow);
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+#search-submit:hover {
+  background: var(--sys-glow);
+  color: var(--sys-bg);
+}
+
+#sys-main {
+  display: flex;
+  gap: 2rem;
+}
+
+#main-data {
+  flex: 3;
+  background-color: var(--sys-surface);
+  padding: 3rem;
+  border: 1px solid var(--sys-dim);
+}
+
+#side-panel {
+  flex: 1;
+  background-color: var(--sys-surface);
+  padding: 3rem;
+  border: 1px solid var(--sys-dim);
+}
+
+#log-title, #diag-title, #ability-title, #tracker-title {
+  color: var(--sys-glow);
+  border-bottom: 1px solid var(--sys-dim);
+  padding-bottom: 1rem;
+}
+
+#node-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+#node-list li {
+  margin-bottom: 1.5rem;
+}
+
+#node-list a {
+  color: var(--sys-text);
+  text-decoration: none;
+}
+
+#node-list a:hover {
+  color: var(--sys-glow);
+  text-shadow: 0 0 8px var(--sys-glow);
+}
+
+#sys-footer {
+  margin-top: 2rem;
+  padding: 2rem;
+  border-top: 1px dashed var(--sys-dim);
+  text-align: center;
+  color: var(--sys-dim);
+}
+
+#sys-footer p {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+/* Comm Form Styles (For the contact page) */
+#comm-form {
+  margin-top: 2rem;
+}
+
+#form-group {
+  margin-bottom: 1.5rem;
+}
+
+#form-group label {
+  color: var(--sys-glow);
+  font-size: 1.6rem;
+}
+
+#form-group input, #form-group textarea {
+  width: 100%;
+  background-color: #050505;
+  color: var(--sys-text);
+  border: 1px solid var(--sys-dim);
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.6rem;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  box-sizing: border-box;
+  outline: none;
+}
+
+#form-group input:focus, #form-group textarea:focus {
+  border-color: var(--sys-glow);
+  box-shadow: 0 0 5px rgba(0, 255, 204, 0.3);
+}
+
+#transmit-btn {
+  background: transparent;
+  color: var(--sys-glow);
+  border: 1px solid var(--sys-glow);
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+#transmit-btn:hover {
+  background: var(--sys-glow);
+  color: var(--sys-bg);
+  box-shadow: 0 0 10px var(--sys-glow);
+}

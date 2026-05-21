@@ -1,0 +1,114 @@
+
+<!--
+Name: Arianna Payne
+Course: INFT1206 - Web Development
+File Homepage Style Sheet 
+Title: Homepage
+Description: This is the homepage for my website.
+-->
+<!-- 
+  ========================================
+  Project Resources & Credits
+  ========================================
+  1. MDN Web Docs - HTML Elements: 
+     https://developer.mozilla.org/en-US/docs/Web/HTML
+     
+  2. CSS-Tricks - Flexbox Guide: 
+     https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+     
+  3. Google Fonts - Share Tech Mono: 
+     https://fonts.google.com/specimen/Share+Tech+Mono
+     
+  4. AI Gemini: 
+     For explanations and suggestions.
+  ========================================
+-->
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NODE_01 // SECURE_PING</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <div id="intrusion-alert">
+      <p>> COMM_LINK_ESTABLISHED. LOGGING ALL KEYSTROKES.</p>
+    </div>
+
+    <header id="sys-header">
+      <div id="header-top">
+        <h2>NODE: CORE</h2>
+        <h3>STATUS: COMM_LINK_OPEN</h3>
+      </div>
+      <h1 id="main-title">PING_SYS_ADMIN</h1>
+      <h3 id="sub-title">> Awaiting user input.</h3>
+    </header>
+
+    <nav id="sys-nav">
+      <ul id="nav-links">
+        <li id="home-button">
+          <a href="../index.html">
+            <img src="../images/channelgem.jpg" alt="Gem Profile" id="gem-icon" />
+          </a>
+        </li>
+        <li><a href="../Lab1/part1.html">[DATA_LOG_01]</a></li>
+        <li><a href="#">[PROJECT_HEXROOT]</a></li>
+        <li><a href="index.html">[PING_SYS_ADMIN]</a></li>
+      </ul>
+
+      <form id="search-box">
+        <label id="prompt-arrow">>_</label>
+        <input type="search" name="q" placeholder="WIP" id="search-input" />
+        <input type="submit" value="EXECUTE" id="search-submit" />
+      </form>
+    </nav>
+
+    <main id="sys-main">
+      <article id="main-data">
+        <h2 id="log-title">> INITIATE_SECURE_MESSAGE</h2>
+        <p id="log-text">
+          Direct line to Firewall.exe and Node Core. Do not transmit sensitive soul-data.
+        </p>
+
+        <form action="#" method="post" id="comm-form">
+          <div id="form-group">
+            <label for="sender-name">> SENDER_ID:</label><br>
+            <input type="text" id="sender-name" name="sender-name" placeholder="Enter Alias..." required />
+          </div>
+
+          <div id="form-group">
+            <label for="sender-email">> SIGNAL_ORIGIN (Email):</label><br>
+            <input type="email" id="sender-email" name="sender-email" placeholder="Enter Comm-Link..." required />
+          </div>
+
+          <div id="form-group">
+            <label for="message">> ENCRYPTED_PAYLOAD:</label><br>
+            <textarea id="message" name="message" rows="5" placeholder="Type message here..." required></textarea>
+          </div>
+
+          <input type="submit" value="TRANSMIT_DATA" id="transmit-btn" />
+        </form>
+      </article>
+
+      <aside id="side-panel">
+        <h2 id="tracker-title">> COMM_STATUS</h2>
+        <ul id="node-list">
+          <li>> ENCRYPTION: ACTIVE</li>
+          <li>> TRACE: BLOCKED</li>
+          <li>> SIGNAL: STABLE</li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer id="sys-footer">
+      <p>> END_OF_FILE. NO GODS. NO KINGS. JUST SIGNAL AND SILENCE.</p>
+    </footer>
+  </body>
+</html>
