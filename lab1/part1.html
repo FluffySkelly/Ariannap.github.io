@@ -14,3 +14,72 @@ Description: This is the homepage for my website.
 
   ========================================
 -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="DR. Eleanor Gaye">
+        <title> Awesome science application correpondence</title>
+        <style>
+            body {
+                font: 1.2em/1.5 system-ui;
+                max-width: 80%;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+
+            #sender-address,#sender-date{
+                text-align: right;
+            }
+
+            h1{
+                font-size: 1.5em;
+            }
+
+            h2{
+                font-size: 1.3em;
+            }
+
+            #home-navigation{
+                margin-bottom: 30px;
+                margin-top: 20px;
+            }
+
+            #gem-nav-icon{
+                height: 60px;
+                width: 60px;
+                border-radius: 4px;
+            }
+
+            #gem-nav-icon:hover{
+                transform: scale(1.1);
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="home-navigation">
+            <a href="../homepage.html">
+                <img src="../images/channelgem.jpg" alt="Gem Profile" id="gem-nav-icon" ></a>
+        </div>
+
+        <address id="sender-address">
+            <strong>Dr. Eleanor Gaye</strong><br>
+            Awesome Science faculty<br>
+            University of Awesome<br>
+            Bobtown, CA 99999<br>
+            USA<br>
+            <strong>Tel</strong> (123) 456-7890<br>
+                <strong>Email</strong> not_reply@example.com<br>
+        </address>
+
+        <p id="sender-date">
+            <time datetime="2016-01-20">January 20, 2016</time>
+        </p>
+        
+    </body>
+
+</html>
