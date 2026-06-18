@@ -1,4 +1,20 @@
 /* Bio Css */
+/* right under this part is my home icon */
+/*=====================================*/
+#home-navigation {
+  position: relative; 
+}
+
+#gem-nav-icon {
+  width: 60px;            
+  position: fixed;        
+  top: 15px;              
+  left: 15px;             
+  border-radius: 50%;    
+  z-index: 1000;          
+}        
+
+/*======================================*/
 html {
   background-color: white;
 }
@@ -17,3 +33,30 @@ h1 {
   font-size:2rem;
 }
 
+h2 {
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+
+.job-title {
+  color: darkslategray;
+  font-weight: bold;
+}
+
+ul {
+  background-color: white;
+  border: 5px solid purple;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+a {
+  color: green;
+}
+
+a:hover,
+a:focus {
+  color: darkgreen;
+  text-decoration: none;
+}
