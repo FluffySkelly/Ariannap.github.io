@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
 <!--
 Name: Arianna Payne
 File: index.html
@@ -11,3 +15,48 @@ MDN Web Docs - JavaScript First Steps (Silly story generator)
 Willy Aguirre (Original assessment code help)
 -->
 
+<title>Silly story generator</title>
+  <style>
+    body {
+      font-family: helvetica, sans-serif;
+      width: 350px;
+    }
+    label {
+      font-weight: bold;
+    }
+    div {
+      padding-bottom: 20px;
+    }
+    input[type="text"] {
+      padding: 5px;
+      width: 150px;
+    }
+    p {
+      background: #FFC125;
+      color: #585858;
+      padding: 10px;
+      visibility: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <label for="custom-name">Enter custom name:</label>
+    <input id="custom-name" type="text" placeholder="" />
+  </div>
+  <fieldset>
+    <legend>Choose locale:</legend>
+    <label for="us">US</label><input id="us" type="radio" name="uk-us" value="us" checked />
+    <label for="uk">UK</label><input id="uk" type="radio" name="uk-us" value="uk" />
+  </fieldset>
+  <div>
+    <button class="generate">Generate random story</button>
+  </div>
+  
+  
+  <p class="story"></p>
+
+  <script src="main.js"></script>
+</body>
+</html>
